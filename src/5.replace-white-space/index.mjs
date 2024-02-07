@@ -3,7 +3,7 @@
  * 例如， 输入“We are happy.”，则输出“ We%20are%20happy."。
  */
 
-function replaceWhiteSpace(str) {
+export function replaceWhiteSpace(str) {
   const strArr = str.split('')
   const strLength = strArr.length
 
@@ -32,16 +32,3 @@ function replaceWhiteSpace(str) {
 
   return strArr.join('')
 }
-
-const str1 = "We are happy."
-const str2 = " We are happy."
-const str3 = "We are happy. "
-const str4 = "We"
-const str5 = " "
-const str6 = "   "
-console.log(replaceWhiteSpace(str1))
-console.log(replaceWhiteSpace(str2))
-console.log(replaceWhiteSpace(str3))
-console.log(replaceWhiteSpace(str4))
-console.log(replaceWhiteSpace(str5))
-console.log(replaceWhiteSpace(str6))

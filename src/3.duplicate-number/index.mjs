@@ -25,7 +25,7 @@ function duplicateNumber2(arr) {}
  * 扫描一遍，换位置
  * 时间复杂度O(n)
  */
-function duplicateNumber3(arr) {
+export function duplicateNumber3(arr) {
   let i = 0
 
   while (i < arr.length) {
@@ -51,5 +51,3 @@ function duplicateNumber3(arr) {
 
   return -1
 }
-
-console.log(duplicateNumber3([2, 3, 1, 0, 2, 5, 3]))
